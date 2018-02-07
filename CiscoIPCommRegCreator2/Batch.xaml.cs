@@ -40,7 +40,7 @@ namespace CiscoIPCommRegCreator2
             }
             else
             {
-                txtResults.Text = "Error.  Please make sure file and path exists." + Environment.NewLine;
+                txtResults.Text = "Error.  Please select file and folder." + Environment.NewLine;
             }
         }
 
