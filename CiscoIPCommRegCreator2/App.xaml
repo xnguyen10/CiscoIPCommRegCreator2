@@ -1,0 +1,11 @@
+﻿<Application x:Class="CiscoIPCommRegCreator2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CiscoIPCommRegCreator2"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <BitmapImage x:Key="ImageSource1" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="C:\Users\DaVinci\Documents\Visual Studio 2017\Projects\CiscoIPCommRegCreator2\CiscoIPCommRegCreator2\Resources\ninja_LoM_icon.ico"/>
+
+    </Application.Resources>
+</Application>

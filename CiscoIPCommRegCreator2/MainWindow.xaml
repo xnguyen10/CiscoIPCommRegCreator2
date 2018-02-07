@@ -1,0 +1,65 @@
+﻿<Window x:Name="frmCiscoReg" x:Class="CiscoIPCommRegCreator2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CiscoIPCommRegCreator2"
+        mc:Ignorable="d"
+        Title="Cisco IP Communicator Reg Creator" Height="145.466" Width="466.245" Loaded="Window_Loaded" ResizeMode="NoResize">
+
+    <StackPanel Height="114" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+        <StackPanel.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform AngleX="-0.279"/>
+                <RotateTransform/>
+                <TranslateTransform X="-0.672"/>
+            </TransformGroup>
+        </StackPanel.RenderTransform>
+        <Grid Margin="0,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="109*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="1" Text="Enter User Name" Margin="2,0,0,0" Padding="2"/>
+            <TextBox x:Name="txtUserName" KeyboardNavigation.TabIndex="0" Grid.Column="1"  TextWrapping="Wrap" Text="" Width="294" HorizontalAlignment="Left" Padding="2" TabIndex="1" Margin="120,0,0,0"/>
+        </Grid>
+
+
+        <Grid Margin="0,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="109*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="1" Text="Enter Device Name" Margin="2,0,0,0" Padding="2"/>
+            <TextBox x:Name="txtDeviceName"  Grid.Column="1" KeyboardNavigation.TabIndex="1" TextWrapping="Wrap" Text="" Width="294" HorizontalAlignment="Left" Margin="120,0,0,10" Padding="2" TabIndex="2"/>
+        </Grid>
+
+        <Grid Margin="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="39*"/>
+                <ColumnDefinition Width="38*"/>
+                <ColumnDefinition Width="38*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="btnClear"  Grid.Column="2" Content="Clear"  Click="btnClear_Click" Margin="10,0" RenderTransformOrigin="0.5,0.5" TabIndex="3"/>
+            <Button x:Name="btnCreateReg" Grid.Column="1"  Content="Create Reg File"  Click="btnCreateReg_Click" Margin="10,0" RenderTransformOrigin="0.5,0.5" TabIndex="4"/>
+            <Button x:Name="btnBatch" Grid.Column="0" Content="Create Batch" Click="btnBatch_Click" Margin="27,0,10,0"/>
+
+        </Grid>
+
+        <Grid Margin="0,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="27*"/>
+                <ColumnDefinition Width="177*"/>
+                <ColumnDefinition Width="314*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+
+
+
+    </StackPanel>
+
+
+</Window>
