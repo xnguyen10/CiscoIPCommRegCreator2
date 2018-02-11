@@ -138,7 +138,6 @@ namespace CiscoIPCommRegCreator2
                 // Create a file to write to.
                 File.WriteAllText(regFile, strRegText);
             }
-
         }
     }
 }
